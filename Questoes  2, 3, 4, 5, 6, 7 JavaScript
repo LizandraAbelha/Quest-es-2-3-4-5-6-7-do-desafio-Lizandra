@@ -1,0 +1,61 @@
+const pessoas = [
+{name: "Fabiana Araújo", age: 33 },
+{ name: "Gabriel Gomes", age: 25 },
+{ name: "Fernando Henrique", age: 17 },
+{name: "Ana Luiza", age: 2 },
+{ name: "Geralda do Nascimento", age: 93 },
+{ name: "Miguel Souza", age: 70 },
+{ name: "Antonio Miguel", age: 69 },
+]
+
+//questão 2
+for(var i= 0; i<=6; i++){
+  console.log(pessoas[i]);
+}
+
+//questão 3
+function informacaoPessoa(nome){
+  for (var j = 0; j<=6; j++){
+    if(nome == pessoas.name[j] ){
+      var dados = console.log(pessoas[j]);
+    }
+  }
+  return dados;
+}
+
+//questão 4
+function retornaNome(pessoas){
+  for(var k = 0; k<=6; k++){
+    var rotorna = console.log(pessoas.name[k]);
+  }
+  return retorna;
+}
+
+//questão 5
+function adicionarId(pessoas){
+  for(var l = 1; l<=7; l++){
+    var p = pessoas.unshift("Id:"[l]);
+  }
+  return p;
+}
+
+//questão 6
+function podeTirarHabilitacao(pessoas){
+  for(var m = 0; m<=6; m++){
+    if(pessoas[m].age>=18){
+      var dado = console.log(pessoas[m]);
+    }
+  }
+  return dado;
+}
+
+//questão 7
+function media(pessoas){
+  var s = 0;
+  for( var n = 0; n<=6; n++){
+    s += pessoas.age [n];
+  }
+  var media = s/6;
+  return media;
+}
+
